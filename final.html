@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio|A. Agasi Idhaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aubrey&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("cmptr.jpg");
+        background-size: cover;
+        background-position: center;
+        filter: blur(6px);
+        z-index: -2;
+    }
+
+    header,
+    nav,
+    section {
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        color: darkviolet;
+
+    }
+
+    header {
+        text-align: center;
+        font-family: Limelight;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: darkblue;
+        font-weight: bold;
+        font-family: Bungee Spice;
+        font-size: 20px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        font-family: Aubrey;
+        font-size: 24px;
+    }
+
+    button {
+        background-color: darkorchid;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: darkviolet;
+        cursor: pointer;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    footer {
+        background-color: darkorchid;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-family: Anton;
+        clear: both;
+    }
+
+    footer:hover {
+        background-color: darkviolet;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Hi, I am A. Agasi Idhaya</h1>
+        <p>I am pursuing my B.E in Computer Science & Engineering at SRM MCET.<br><br>I am a passionate web developer,
+            who loves to develop fun websites.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#course">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me!</h2>
+        <p>I am a curious and disciplined learner with a strong interest in technology, problem-solving, and creative
+            thinking.<br><br>As a college student, I enjoy exploring how ideas—from logic and engineering to
+            storytelling and
+            design—come together to create meaningful solutions.<br><br>I value clarity, structure, and continuous
+            improvement,
+            and I approach every project with patience, responsibility, and a willingness to learn.</p>
+    </section>
+    <section id="course">
+        <h2>Courses Completed</h2>
+        <ol>
+            <li><strong>HTML</strong></li>
+            <li><strong>CSS</strong></li>
+            <li><strong>Javascript</strong></li>
+            <li><strong>Python</strong></li>
+            <li><strong>C,C++</strong></li>
+            <li><strong>Java</strong></li>
+        </ol>
+    </section>
+    <section id="contact">
+        <h2>Contact:</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+
+            <br><br>
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+    <footer>
+       <script>
+        document.querySelector("footer").innerHTML =
+            "© " + new Date().getFullYear() + " A. Agasi Idhaya";
+    </script>
+    </footer>
+
+</body>
+
+</html>
